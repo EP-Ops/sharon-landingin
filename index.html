@@ -8,34 +8,53 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap');
-        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #FCF8F5; color: #4A4440; scroll-behavior: smooth; }
+        
+        /* ENHANCED BACKGROUND: Moving from pale to a rich silk champagne */
+        body { 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            background: linear-gradient(135deg, #fdf4f0 0%, #f7e8df 100%); 
+            color: #4A4440; 
+            scroll-behavior: smooth; 
+        }
+
         .accent-rose { color: #B5838D; }
         .bg-rose { background-color: #B5838D; }
+        
+        /* SHARPNESS & VIBRANCY: Making the photo "pop" against the new background */
         .enhanced-photo {
-            filter: contrast(1.05) saturate(1.1) brightness(1.02);
+            filter: contrast(1.1) saturate(1.15) brightness(1.02) drop-shadow(0 20px 50px rgba(181, 131, 141, 0.3));
             object-position: top center;
         }
+
         .timeline-dot { position: relative; }
         .timeline-dot::before {
             content: ''; position: absolute; left: -25px; top: 5px; width: 12px; height: 12px;
-            background-color: #B5838D; border-radius: 50%; border: 3px solid #FCF8F5;
+            background-color: #B5838D; border-radius: 50%; border: 3px solid #fdf4f0;
+        }
+
+        /* GLASS CARD: To make the text sections stand out from the rich background */
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
         }
     </style>
 </head>
 <body>
 
-    <header class="relative min-h-screen flex items-center pt-20 px-6 overflow-hidden bg-[#FDF4F0]">
+    <header class="relative min-h-screen flex items-center pt-20 px-6 overflow-hidden bg-[#F7E8DF]">
         <div class="absolute top-0 right-0 w-full lg:w-1/2 h-full z-0">
             <img src="Sharon.jpg" alt="Sharon Landingin" 
                 class="enhanced-photo w-full h-full object-cover"
-                style="mask-image: linear-gradient(to left, black 75%, transparent 100%); -webkit-mask-image: linear-gradient(to left, black 75%, transparent 100%);">
-            <div class="absolute inset-0 bg-gradient-to-r from-[#FDF4F0] via-[#FDF4F0]/20 to-transparent lg:hidden"></div>
-            <div class="absolute inset-0 bg-gradient-to-t from-[#FDF4F0] via-transparent to-transparent"></div>
+                style="mask-image: linear-gradient(to left, black 80%, transparent 100%); -webkit-mask-image: linear-gradient(to left, black 80%, transparent 100%);">
+            
+            <div class="absolute inset-0 bg-gradient-to-r from-[#F7E8DF] via-[#F7E8DF]/40 to-transparent lg:hidden"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-[#F7E8DF] via-transparent to-transparent"></div>
         </div>
 
         <div class="relative z-10 max-w-6xl mx-auto w-full">
             <div class="lg:w-1/2">
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/60 border border-rose/30 mb-8 shadow-sm">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/80 border border-rose/30 mb-8 shadow-sm">
                     <span class="w-2 h-2 rounded-full bg-rose animate-pulse"></span>
                     <span class="accent-rose text-[10px] font-bold uppercase tracking-[0.3em]">Operations Specialist</span>
                 </div>
@@ -45,13 +64,18 @@
                 <p class="text-lg md:text-xl text-[#6D6875] font-medium mb-10 max-w-md">
                     Bridging the gap between <span class="text-[#4A4440] font-bold">CEO vision</span> and operational execution with 15+ years of excellence.
                 </p>
-                <a href="#about" class="px-8 py-4 bg-rose text-white rounded-full font-bold text-[10px] uppercase tracking-widest hover:scale-105 transition shadow-xl">Full Experience</a>
+                <div class="flex gap-4">
+                    <a href="#about" class="px-8 py-4 bg-rose text-white rounded-full font-bold text-[10px] uppercase tracking-widest hover:scale-105 transition shadow-xl">Full Experience</a>
+                    <a href="Sharon_Resume.pdf" download class="px-8 py-4 bg-white border border-rose/20 text-[#4A4440] rounded-full font-bold text-[10px] uppercase tracking-widest hover:bg-[#fdf4f0] transition shadow-md flex items-center gap-2">
+                        <i class="fa-solid fa-download"></i> PDF Resume
+                    </a>
+                </div>
             </div>
         </div>
     </header>
 
-    <section id="about" class="py-24 px-6 bg-white">
-        <div class="max-w-5xl mx-auto">
+    <section id="about" class="py-24 px-6">
+        <div class="max-w-5xl mx-auto glass-panel p-10 md:p-16 rounded-[40px] shadow-2xl">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-20">
                 
                 <div>
@@ -72,11 +96,11 @@
 
                     <h3 class="text-xs font-black text-[#4A4440] uppercase tracking-widest mb-4">Technical Skills</h3>
                     <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-[#FDF4F0] text-[10px] font-bold rounded-full accent-rose">Salesforce</span>
-                        <span class="px-3 py-1 bg-[#FDF4F0] text-[10px] font-bold rounded-full accent-rose">HubSpot</span>
-                        <span class="px-3 py-1 bg-[#FDF4F0] text-[10px] font-bold rounded-full accent-rose">G-Suite</span>
-                        <span class="px-3 py-1 bg-[#FDF4F0] text-[10px] font-bold rounded-full accent-rose">Asana</span>
-                        <span class="px-3 py-1 bg-[#FDF4F0] text-[10px] font-bold rounded-full accent-rose">Trello</span>
+                        <span class="px-3 py-1 bg-white border border-rose/20 text-[10px] font-bold rounded-full accent-rose">Salesforce</span>
+                        <span class="px-3 py-1 bg-white border border-rose/20 text-[10px] font-bold rounded-full accent-rose">HubSpot</span>
+                        <span class="px-3 py-1 bg-white border border-rose/20 text-[10px] font-bold rounded-full accent-rose">G-Suite</span>
+                        <span class="px-3 py-1 bg-white border border-rose/20 text-[10px] font-bold rounded-full accent-rose">Asana</span>
+                        <span class="px-3 py-1 bg-white border border-rose/20 text-[10px] font-bold rounded-full accent-rose">Trello</span>
                     </div>
                 </div>
 
@@ -104,7 +128,7 @@
         </div>
     </section>
 
-    <footer class="py-12 bg-[#FDF4F0] text-center border-t border-rose/10">
+    <footer class="py-12 text-center">
         <div class="mb-6 flex justify-center gap-6">
             <a href="mailto:peralta.landingin@gmail.com" class="text-[#4A4440] hover:accent-rose transition"><i class="fa-solid fa-envelope text-xl"></i></a>
             <a href="tel:+639918308524" class="text-[#4A4440] hover:accent-rose transition"><i class="fa-solid fa-phone text-xl"></i></a>
