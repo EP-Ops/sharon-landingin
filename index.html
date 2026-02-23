@@ -14,24 +14,21 @@
             font-family: 'Plus Jakarta Sans', sans-serif; 
             background-color: #FCF8F5; /* Soft Champagne/Cream */
             color: #4A4440; 
-        }
-        .bg-feminine-gradient {
-            background: linear-gradient(135deg, #FDFBFB 0%, #EBEDEE 100%);
+            scroll-behavior: smooth;
         }
         .accent-rose { color: #B5838D; } /* Dusty Rose Gold */
         .bg-rose { background-color: #B5838D; }
+        .bg-cream { background-color: #EAE4DD; }
         .border-rose { border-color: #E5989B; }
     </style>
 </head>
 <body>
 
     <header class="relative min-h-screen flex items-center pt-20 px-6 overflow-hidden bg-[#EAE4DD]">
-        
         <div class="absolute top-0 right-0 w-full lg:w-1/2 h-full z-0">
             <img src="Sharon.jpg" alt="Sharon Landingin" 
                 class="w-full h-full object-cover object-top opacity-100"
                 style="mask-image: linear-gradient(to left, black 60%, transparent 100%); -webkit-mask-image: linear-gradient(to left, black 60%, transparent 100%);">
-            
             <div class="absolute inset-0 bg-gradient-to-r from-[#EAE4DD] via-[#EAE4DD]/40 to-transparent lg:hidden"></div>
             <div class="absolute inset-0 bg-gradient-to-t from-[#EAE4DD] via-transparent to-transparent"></div>
         </div>
@@ -42,39 +39,61 @@
                     <span class="w-2 h-2 rounded-full bg-rose animate-pulse"></span>
                     <span class="accent-rose text-[10px] font-bold uppercase tracking-[0.3em]">Executive Operations Mastery</span>
                 </div>
-                
                 <h1 class="text-5xl md:text-8xl font-black mb-6 tracking-tighter text-[#4A4440] leading-none">
-                    SHARON P. <br> 
-                    <span class="accent-rose">LANDINGIN</span>
+                    SHARON P. <br> <span class="accent-rose">LANDINGIN</span>
                 </h1>
-
                 <p class="text-lg md:text-xl text-[#6D6875] font-medium mb-10 max-w-md leading-relaxed">
-                    Bridging the gap between <span class="border-b-2 border-rose/30 text-[#4A4440]">CEO vision</span> and operational excellence with 15+ years of mastery.
+                    Bridging the gap between <span class="border-b-2 border-rose/30 text-[#4A4440]">CEO vision</span> and operational excellence.
                 </p>
-
-                <div class="flex flex-wrap gap-4">
-                    <a href="mailto:peralta.landingin@gmail.com" class="px-8 py-4 bg-rose text-white rounded-full font-bold text-[10px] uppercase tracking-widest hover:brightness-110 transition shadow-xl">
-                        Work With Sharon
-                    </a>
-                </div>
+                <a href="#about" class="px-8 py-4 bg-rose text-white rounded-full font-bold text-[10px] uppercase tracking-widest hover:brightness-110 transition shadow-xl inline-block">Learn More</a>
             </div>
         </div>
     </header>
 
-    <section class="bg-white py-16 px-6 border-y border-[#EAE4DD]">
+    <section class="bg-white py-12 px-6 border-y border-[#EAE4DD]">
         <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div><p class="text-4xl font-bold text-[#4A4440]">15+</p><p class="accent-rose text-[10px] font-bold uppercase tracking-[0.2em] mt-2">Years Exp</p></div>
-            <div><p class="text-4xl font-bold text-[#4A4440]">80%</p><p class="accent-rose text-[10px] font-bold uppercase tracking-[0.2em] mt-2">Sales Growth</p></div>
-            <div><p class="text-4xl font-bold text-[#4A4440]">5+</p><p class="accent-rose text-[10px] font-bold uppercase tracking-[0.2em] mt-2">Remote Mastery</p></div>
-            <div><p class="text-4xl font-bold text-[#4A4440]">SME</p><p class="accent-rose text-[10px] font-bold uppercase tracking-[0.2em] mt-2">Certified</p></div>
+            <div><p class="text-3xl font-bold text-[#4A4440]">15+</p><p class="accent-rose text-[9px] font-bold uppercase tracking-widest mt-2">Years Exp</p></div>
+            <div><p class="text-3xl font-bold text-[#4A4440]">80%</p><p class="accent-rose text-[9px] font-bold uppercase tracking-widest mt-2">Sales Growth</p></div>
+            <div><p class="text-3xl font-bold text-[#4A4440]">5+</p><p class="accent-rose text-[9px] font-bold uppercase tracking-widest mt-2">Remote Mastery</p></div>
+            <div><p class="text-3xl font-bold text-[#4A4440]">SME</p><p class="accent-rose text-[9px] font-bold uppercase tracking-widest mt-2">Certified</p></div>
         </div>
     </section>
 
-    <footer class="py-20 text-center bg-[#FCF8F5]">
+    <section id="about" class="py-24 px-6 bg-[#FCF8F5]">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-sm font-black accent-rose uppercase tracking-[0.4em] mb-4">Professional Summary</h2>
+                <div class="w-12 h-1 bg-rose mx-auto opacity-30"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-12 items-start">
+                <div class="md:col-span-2">
+                    <h3 class="text-3xl font-bold text-[#4A4440] leading-tight mb-6">
+                        Results-driven expert in <span class="accent-rose">BPO & Remote Operations</span>
+                    </h3>
+                </div>
+                <div class="md:col-span-3">
+                    <p class="text-[#6D6875] leading-relaxed text-lg mb-6">
+                        Dynamic Professional with over 15 years of experience, including 10+ years in the BPO industry and 5+ years of proven remote work.
+                    </p>
+                    <p class="text-[#6D6875] leading-relaxed text-lg">
+                        Expert at bridging the gap between CEO vision and operational execution. Proven track record of increasing sales productivity by 80% and driving 50% business growth through CRM optimization and strategic administrative support.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-20 text-center bg-white border-t border-[#EAE4DD]">
+        <h2 class="text-2xl font-bold text-[#4A4440] mb-8">Ready to streamline your business?</h2>
+        <div class="flex justify-center gap-6 mb-12">
+            <a href="mailto:peralta.landingin@gmail.com" class="text-[#6D6875] hover:text-rose transition text-xl"><i class="fa-solid fa-envelope"></i></a>
+            <a href="tel:+639918308524" class="text-[#6D6875] hover:text-rose transition text-xl"><i class="fa-solid fa-phone"></i></a>
+        </div>
         <p class="text-[#6D6875] text-[10px] font-bold uppercase tracking-[0.4em] mb-4">Sharon P. Landingin • Tarlac City, PH</p>
-        <div class="pt-8 border-t border-[#EAE4DD] mx-20">
+        <div class="pt-8 border-t border-[#EAE4DD] mx-10 lg:mx-40">
             <p class="text-[9px] font-black uppercase tracking-[0.5em] text-[#B5838D]/60">
-                Designed by <span class="italic">EP Digital</span>
+                Designed by <span class="italic text-[#4A4440]">EP Digital</span>
             </p>
         </div>
     </footer>
