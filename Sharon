@@ -3,118 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sharon P. Landingin | Executive Virtual Assistant</title>
+    <title>Sharon P. Landingin | Executive Virtual Assistant & Operations Specialist</title>
     
-    <meta property="og:title" content="Sharon P. Landingin | Operations Specialist">
-    <meta property="og:description" content="15+ years of experience in BPO and Remote Operations. Expert Executive VA.">
-    <meta property="og:image" content="sharon-profile.jpg"> <script src="https://cdn.tailwindcss.com"></script>
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Sharon P. Landingin | Executive Virtual Assistant">
+    <meta property="og:description" content="15+ years of BPO and Remote Operations mastery. Expert in bridging CEO vision with execution.">
+    <meta property="og:image" content="Sharon.jpg">
+
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap');
-        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #fcfbf7; }
-        .accent-gold { color: #a08661; }
+        body { 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            scroll-behavior: smooth; 
+            background-color: #0f172a; /* Deep Navy to match her suit/background */
+            color: #f1f5f9;
+        }
+        .glass { background: rgba(15, 23, 42, 0.9); backdrop-filter: blur(12px); }
+        .accent-gold { color: #a08661; } /* The Tan/Gold color from her resume */
         .bg-gold { background-color: #a08661; }
-        .bg-navy { background-color: #1a1d23; }
     </style>
 </head>
-<body class="text-slate-800">
+<body class="text-slate-200">
 
-    <header class="relative min-h-screen flex items-center bg-navy overflow-hidden">
-        <div class="absolute right-0 top-0 w-full lg:w-1/2 h-full opacity-40 lg:opacity-100">
-            <img src="sharon-photo.jpg" alt="Sharon Landingin" class="w-full h-full object-cover object-top">
-            <div class="absolute inset-0 bg-gradient-to-r from-navy via-navy/50 to-transparent"></div>
+    <nav class="fixed top-0 w-full z-50 glass border-b border-white/5">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="font-black tracking-tighter text-white text-xl uppercase">SL<span class="accent-gold">.</span></span>
+            <div class="hidden md:flex space-x-8 text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400">
+                <a href="#expertise" class="hover:text-gold transition">Expertise</a>
+                <a href="#experience" class="hover:text-gold transition">Experience</a>
+                <a href="#contact" class="hover:text-gold transition">Contact</a>
+            </div>
+            <a href="mailto:peralta.landingin@gmail.com" class="bg-gold text-white px-5 py-2 rounded-full text-[10px] font-bold uppercase tracking-widest hover:brightness-110 transition shadow-lg">Hire Sharon</a>
+        </div>
+    </nav>
+
+    <header class="relative min-h-screen flex items-center pt-28 md:pt-20 px-6 overflow-hidden bg-[#1a1d23]">
+        
+        <div class="absolute top-0 right-0 w-full lg:w-1/2 h-full z-0 pointer-events-none">
+            <img src="Sharon.jpg" alt="Sharon Landingin" 
+                class="w-full h-full object-cover object-top opacity-90 md:opacity-100 brightness-110 contrast-105"
+                style="mask-image: linear-gradient(to left, black 50%, transparent 100%); -webkit-mask-image: linear-gradient(to left, black 50%, transparent 100%);">
+            
+            <div class="absolute inset-0 bg-gradient-to-r from-[#1a1d23] via-[#1a1d23]/80 to-transparent lg:hidden"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-[#1a1d23] via-transparent to-transparent"></div>
         </div>
 
-        <div class="relative z-10 max-w-6xl mx-auto px-6 w-full">
-            <div class="lg:w-1/2">
-                <p class="text-gold font-bold tracking-[0.3em] uppercase text-xs mb-4">Operations Specialist</p>
-                <h1 class="text-5xl md:text-7xl font-extrabold text-white leading-tight mb-6">
-                    SHARON P. <br> <span class="accent-gold">LANDINGIN</span>
+        <div class="relative z-10 max-w-6xl mx-auto w-full">
+            <div class="lg:w-2/3">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#a08661]/20 border border-[#a08661]/30 mb-8">
+                    <span class="w-2 h-2 rounded-full bg-gold animate-pulse"></span>
+                    <span class="accent-gold text-[10px] font-bold uppercase tracking-[0.3em]">Executive Virtual Assistant</span>
+                </div>
+                
+                <h1 class="text-5xl md:text-8xl font-black mb-6 tracking-tighter text-white leading-none">
+                    SHARON P. <br> 
+                    <span class="accent-gold uppercase">LANDINGIN</span>
                 </h1>
-                <p class="text-slate-300 text-lg md:text-xl mb-10 max-w-md">
-                    Bridging the gap between CEO vision and operational execution with 15+ years of BPO and remote mastery.
+
+                <p class="text-lg md:text-2xl text-slate-400 font-medium mb-10 max-w-lg leading-relaxed">
+                    15+ years of excellence—bridging the gap between <span class="text-white border-b border-gold/40">CEO vision</span> and <span class="text-white border-b border-gold/40">Operational execution</span>.
                 </p>
-                <div class="flex gap-4">
-                    <a href="#contact" class="bg-gold hover:bg-[#8e7552] text-white px-8 py-4 rounded-full font-bold text-xs uppercase tracking-widest transition shadow-lg">
-                        Hire Sharon
+
+                <div class="flex flex-wrap gap-4">
+                    <a href="#expertise" class="px-8 py-4 bg-gold text-white rounded-full font-bold text-[10px] uppercase tracking-widest hover:brightness-110 transition shadow-xl">
+                        View Expertise
                     </a>
                 </div>
             </div>
         </div>
     </header>
 
-    <section class="py-20 bg-white border-b border-slate-100">
-        <div class="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
-            <div>
-                <p class="text-4xl font-bold accent-gold">15+</p>
-                <p class="text-[10px] font-black uppercase tracking-widest text-slate-400 mt-2">Years Experience</p>
-            </div>
-            <div>
-                <p class="text-4xl font-bold accent-gold">5+</p>
-                <p class="text-[10px] font-black uppercase tracking-widest text-slate-400 mt-2">Remote Mastery</p>
-            </div>
-            <div>
-                <p class="text-4xl font-bold accent-gold">80%</p>
-                <p class="text-[10px] font-black uppercase tracking-widest text-slate-400 mt-2">Sales Growth</p>
-            </div>
-            <div>
-                <p class="text-4xl font-bold accent-gold">SME</p>
-                <p class="text-[10px] font-black uppercase tracking-widest text-slate-400 mt-2">Certified Tech</p>
-            </div>
+    <section class="bg-white/5 py-16 px-6 border-y border-white/5">
+        <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div><p class="text-4xl font-bold text-white">15+</p><p class="accent-gold text-[10px] font-bold uppercase tracking-[0.2em] mt-2">Years Exp</p></div>
+            <div><p class="text-4xl font-bold text-white">80%</p><p class="accent-gold text-[10px] font-bold uppercase tracking-[0.2em] mt-2">Sales Growth</p></div>
+            <div><p class="text-4xl font-bold text-white">5+</p><p class="accent-gold text-[10px] font-bold uppercase tracking-[0.2em] mt-2">Remote Years</p></div>
+            <div><p class="text-4xl font-bold text-white">SME</p><p class="accent-gold text-[10px] font-bold uppercase tracking-[0.2em] mt-2">Certified Tech</p></div>
         </div>
     </section>
 
-    <section class="py-24 px-6 bg-[#fcfbf7]">
-        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-            <div>
-                <h2 class="text-3xl font-bold mb-8 uppercase tracking-tighter">Core Expertise</h2>
-                <div class="space-y-6">
-                    <div class="flex gap-4">
-                        <div class="w-12 h-12 bg-gold/10 rounded-xl flex items-center justify-center text-gold"><i class="fa-solid fa-calendar-check"></i></div>
-                        <div>
-                            <h4 class="font-bold">Executive Management</h4>
-                            <p class="text-sm text-slate-500">Calendar, billing reconciliation, and strategic planning.</p>
-                        </div>
-                    </div>
-                    <div class="flex gap-4">
-                        <div class="w-12 h-12 bg-gold/10 rounded-xl flex items-center justify-center text-gold"><i class="fa-solid fa-chart-line"></i></div>
-                        <div>
-                            <h4 class="font-bold">CRM & Systems</h4>
-                            <p class="text-sm text-slate-500">Expert in Salesforce, HubSpot, and G-Suite optimization.</p>
-                        </div>
-                    </div>
-                    <div class="flex gap-4">
-                        <div class="w-12 h-12 bg-gold/10 rounded-xl flex items-center justify-center text-gold"><i class="fa-solid fa-users-gear"></i></div>
-                        <div>
-                            <h4 class="font-bold">Change Leadership</h4>
-                            <p class="text-sm text-slate-500">Certified Change Leader with a focus on process improvement.</p>
-                        </div>
-                    </div>
+    <section id="expertise" class="py-24 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h3 class="text-sm font-black accent-gold uppercase tracking-[0.4em] mb-12 text-center">Strategic Skillset</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-8 bg-white/5 rounded-3xl border border-white/10">
+                    <i class="fa-solid fa-user-tie text-3xl accent-gold mb-6"></i>
+                    <h4 class="text-xl font-bold text-white mb-4">Executive Support</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">Calendar management, billing reconciliation, and strategic administrative support for C-level executives.</p>
+                </div>
+                <div class="p-8 bg-white/5 rounded-3xl border border-white/10">
+                    <i class="fa-solid fa-gears text-3xl accent-gold mb-6"></i>
+                    <h4 class="text-xl font-bold text-white mb-4">Operations & CRM</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">Expert mastery of Salesforce, HubSpot, and G-Suite to optimize workflows and drive business growth.</p>
+                </div>
+                <div class="p-8 bg-white/5 rounded-3xl border border-white/10">
+                    <i class="fa-solid fa-diagram-project text-3xl accent-gold mb-6"></i>
+                    <h4 class="text-xl font-bold text-white mb-4">Change Leadership</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">Certified Change Leader focused on process improvement and scaling cross-functional teams.</p>
                 </div>
             </div>
-            <div class="bg-navy p-12 rounded-[40px] text-white">
-                <h3 class="text-xl font-bold mb-6">"Bridging the gap between CEO vision and execution."</h3>
-                <p class="text-slate-400 leading-relaxed mb-6 italic">
-                    Sharon has a proven track record of increasing sales productivity by 80% and driving 50% business growth through strategic support.
-                </p>
-                <hr class="border-white/10 mb-6">
-                <p class="text-xs font-bold uppercase tracking-[0.2em] text-gold">Tarlac City, Philippines</p>
-            </div>
         </div>
     </section>
 
-    <footer id="contact" class="py-24 bg-white text-center">
-        <h2 class="text-4xl font-bold mb-4">Work with Sharon</h2>
-        <p class="text-slate-500 mb-10">Executive Virtual Assistant | Operations Specialist</p>
-        <div class="flex justify-center gap-6">
-            <a href="mailto:peralta.landingin@gmail.com" class="text-2xl hover:text-gold transition"><i class="fa-solid fa-envelope"></i></a>
-            <a href="tel:+639918308524" class="text-2xl hover:text-gold transition"><i class="fa-solid fa-phone"></i></a>
+    <footer id="contact" class="py-24 px-6 bg-black/20 text-center">
+        <h3 class="text-3xl md:text-5xl font-bold text-white mb-8">Ready to streamline your operations?</h3>
+        <div class="flex flex-wrap justify-center gap-6 mb-16">
+            <a href="mailto:peralta.landingin@gmail.com" class="px-10 py-4 bg-gold text-white rounded-full font-bold text-xs uppercase tracking-widest shadow-xl">Send Email</a>
+            <a href="tel:+639918308524" class="px-10 py-4 border border-white/20 text-white rounded-full font-bold text-xs uppercase tracking-widest hover:bg-white/5">Call Direct</a>
         </div>
         
-        <div class="mt-20 pt-8 border-t border-slate-100">
-            <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">
-                Designed & Hosted by <span class="text-slate-900">EP Digital</span>
+        <p class="text-slate-500 text-[10px] font-bold uppercase tracking-[0.4em] mb-4">Sharon P. Landingin • Tarlac City, PH</p>
+        
+        <div class="pt-8 border-t border-white/5">
+            <p class="text-[9px] font-black uppercase tracking-[0.5em] text-slate-600">
+                Designed & Hosted by <span class="text-slate-400 italic">EP Digital</span>
             </p>
         </div>
     </footer>
