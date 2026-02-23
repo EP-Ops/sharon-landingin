@@ -31,16 +31,17 @@
         }
 
         .glass-panel {
-            background: rgba(255, 255, 255, 0.6);
-            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
             border: 1px solid rgba(255, 255, 255, 0.4);
         }
 
-        .laptop(1)-img {
-            border-radius: 20px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        .laptop-img {
+            border-radius: 24px;
+            box-shadow: 0 25px 50px -12px rgba(181, 131, 141, 0.4);
             width: 100%;
-            height: 400px;
+            height: 100%;
+            max-height: 550px;
             object-fit: cover;
         }
     </style>
@@ -69,7 +70,7 @@
                     Bridging the gap between <span class="text-[#4A4440] font-bold">CEO vision</span> and operational execution.
                 </p>
                 <div class="flex gap-4">
-                    <a href="#about" class="px-8 py-4 bg-rose text-white rounded-full font-bold text-[10px] uppercase tracking-widest hover:scale-105 transition shadow-xl">Full Experience</a>
+                    <a href="#about" class="px-8 py-4 bg-rose text-white rounded-full font-bold text-[10px] uppercase tracking-widest hover:scale-105 transition shadow-xl">Explore Career</a>
                     <a href="Sharon_Resume.pdf" download class="px-8 py-4 bg-white border border-rose/20 text-[#4A4440] rounded-full font-bold text-[10px] uppercase tracking-widest hover:bg-[#fdf4f0] transition shadow-md flex items-center gap-2">
                         <i class="fa-solid fa-download"></i> PDF Resume
                     </a>
@@ -79,20 +80,30 @@
     </header>
 
     <section id="about" class="py-24 px-6">
-        <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             
-            <div class="order-2 lg:order-1">
-                <img src="laptop(1).jpg" alt="Executive Workspace" class="laptop(1)-img">
+            <div class="sticky top-24">
+                <img src="laptop.jpg" alt="Executive Workspace" class="laptop-img">
             </div>
 
-            <div class="order-1 lg:order-2 glass-panel p-10 rounded-[40px]">
+            <div class="glass-panel p-8 md:p-12 rounded-[40px] shadow-2xl">
                 <h2 class="text-sm font-black accent-rose uppercase tracking-[0.4em] mb-6">About Sharon</h2>
                 <p class="text-[#6D6875] leading-relaxed text-lg mb-6">
-                    Dynamic and results-driven Professional with over 15 years of experience, including 10+ years in the BPO industry and 5+ years of proven remote work.
+                    Dynamic Professional with over 15 years of experience, including 10+ years in the BPO industry and 5+ years of proven remote work.
                 </p>
-                <p class="text-[#6D6875] leading-relaxed mb-8">
-                    Expert at bridging the gap between CEO vision and operational execution. Proven track record of increasing sales productivity by 80% and driving 50% business growth through CRM optimization.
+                
+                <div class="mb-8 p-6 bg-white/40 rounded-2xl border-l-4 border-rose">
+                    <h3 class="text-xs font-black text-[#4A4440] uppercase tracking-widest mb-3">CSR & BPO Mastery</h3>
+                    <p class="text-[#6D6875] text-sm leading-relaxed">
+                        Expert in high-volume customer operations and technical support. Former <strong>SME and Team Leader</strong> for AT&T accounts, specializing in sales productivity and complex problem-solving within the BPO sector.
+                    </p>
+                </div>
+
+                <p class="text-[#6D6875] leading-relaxed mb-8 text-sm">
+                    Proven track record of increasing sales productivity by 80% and driving 50% business growth through CRM optimization and strategic executive support.
                 </p>
+
+                <h3 class="text-xs font-black text-[#4A4440] uppercase tracking-widest mb-4">Technical Stack</h3>
                 <div class="flex flex-wrap gap-2">
                     <span class="px-3 py-1 bg-white border border-rose/20 text-[10px] font-bold rounded-full accent-rose">Salesforce</span>
                     <span class="px-3 py-1 bg-white border border-rose/20 text-[10px] font-bold rounded-full accent-rose">HubSpot</span>
@@ -103,24 +114,24 @@
         </div>
     </section>
 
-    <section class="py-24 px-6 bg-white/30">
+    <section class="py-24 px-6 bg-white/20">
         <div class="max-w-4xl mx-auto">
-            <h2 class="text-sm font-black accent-rose uppercase tracking-[0.4em] mb-12 text-center">Work History</h2>
+            <h2 class="text-sm font-black accent-rose uppercase tracking-[0.4em] mb-12 text-center">Detailed Work History</h2>
             <div class="border-l-2 border-rose/20 ml-6 space-y-12">
                 <div class="timeline-dot">
                     <h4 class="font-bold text-[#4A4440] text-xl">Appointment Setter / CEO Assistant</h4>
                     <p class="text-[10px] font-black accent-rose uppercase tracking-widest mb-2">Togetherlight Inc. | 2021 - Present</p>
-                    <p class="text-sm text-[#6D6875]">Optimized CRM systems to increase sales productivity by 80% and managed executive-level scheduling.</p>
+                    <p class="text-sm text-[#6D6875]">Optimized CRM systems and managed high-level operations to support executive leadership.</p>
                 </div>
                 <div class="timeline-dot">
                     <h4 class="font-bold text-[#4A4440] text-xl">Operations Manager / Change Leader</h4>
                     <p class="text-[10px] font-black accent-rose uppercase tracking-widest mb-2">Sitel Philippines | 2018 - 2021</p>
-                    <p class="text-sm text-[#6D6875]">Led organizational change and improved large-scale operational processes for cost-efficiency.</p>
+                    <p class="text-sm text-[#6D6875]">Spearheaded organizational changes and managed large-scale teams to hit corporate targets.</p>
                 </div>
                 <div class="timeline-dot">
                     <h4 class="font-bold text-[#4A4440] text-xl">Team Leader / SME (AT&T)</h4>
                     <p class="text-[10px] font-black accent-rose uppercase tracking-widest mb-2">Sutherland Global | 2010 - 2018</p>
-                    <p class="text-sm text-[#6D6875]">Oversaw Sales, Technical, and Billing operations for complex accounts.</p>
+                    <p class="text-sm text-[#6D6875]">Directed sales and technical billing operations for one of the most complex accounts in the BPO industry.</p>
                 </div>
             </div>
         </div>
