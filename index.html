@@ -9,7 +9,6 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap');
         
-        /* ENHANCED BACKGROUND: Moving from pale to a rich silk champagne */
         body { 
             font-family: 'Plus Jakarta Sans', sans-serif; 
             background: linear-gradient(135deg, #fdf4f0 0%, #f7e8df 100%); 
@@ -20,7 +19,6 @@
         .accent-rose { color: #B5838D; }
         .bg-rose { background-color: #B5838D; }
         
-        /* SHARPNESS & VIBRANCY: Making the photo "pop" against the new background */
         .enhanced-photo {
             filter: contrast(1.1) saturate(1.15) brightness(1.02) drop-shadow(0 20px 50px rgba(181, 131, 141, 0.3));
             object-position: top center;
@@ -32,11 +30,18 @@
             background-color: #B5838D; border-radius: 50%; border: 3px solid #fdf4f0;
         }
 
-        /* GLASS CARD: To make the text sections stand out from the rich background */
         .glass-panel {
             background: rgba(255, 255, 255, 0.6);
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+
+        .laptop-img {
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
         }
     </style>
 </head>
@@ -47,7 +52,6 @@
             <img src="Sharon.jpg" alt="Sharon Landingin" 
                 class="enhanced-photo w-full h-full object-cover"
                 style="mask-image: linear-gradient(to left, black 80%, transparent 100%); -webkit-mask-image: linear-gradient(to left, black 80%, transparent 100%);">
-            
             <div class="absolute inset-0 bg-gradient-to-r from-[#F7E8DF] via-[#F7E8DF]/40 to-transparent lg:hidden"></div>
             <div class="absolute inset-0 bg-gradient-to-t from-[#F7E8DF] via-transparent to-transparent"></div>
         </div>
@@ -62,7 +66,7 @@
                     SHARON P. <br> <span class="accent-rose uppercase">LANDINGIN</span>
                 </h1>
                 <p class="text-lg md:text-xl text-[#6D6875] font-medium mb-10 max-w-md">
-                    Bridging the gap between <span class="text-[#4A4440] font-bold">CEO vision</span> and operational execution with 15+ years of excellence.
+                    Bridging the gap between <span class="text-[#4A4440] font-bold">CEO vision</span> and operational execution.
                 </p>
                 <div class="flex gap-4">
                     <a href="#about" class="px-8 py-4 bg-rose text-white rounded-full font-bold text-[10px] uppercase tracking-widest hover:scale-105 transition shadow-xl">Full Experience</a>
@@ -75,54 +79,48 @@
     </header>
 
     <section id="about" class="py-24 px-6">
-        <div class="max-w-5xl mx-auto glass-panel p-10 md:p-16 rounded-[40px] shadow-2xl">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-20">
-                
-                <div>
-                    <h2 class="text-sm font-black accent-rose uppercase tracking-[0.4em] mb-6">About Sharon</h2>
-                    <p class="text-[#6D6875] leading-relaxed text-lg mb-6">
-                        Dynamic and results-driven Professional with over 15 years of experience, including 10+ years in the BPO industry and 5+ years of proven remote work.
-                    </p>
-                    <p class="text-[#6D6875] leading-relaxed mb-8">
-                        Expert at bridging the gap between CEO vision and operational execution. Proven track record of increasing sales productivity by 80% and driving 50% business growth through CRM optimization and strategic administrative support.
-                    </p>
-                    
-                    <h3 class="text-xs font-black text-[#4A4440] uppercase tracking-widest mb-4">Certifications</h3>
-                    <ul class="space-y-3 mb-8">
-                        <li class="flex items-center gap-3 text-sm text-[#6D6875]"><i class="fa-solid fa-certificate accent-rose"></i> Certified Change Leader – Sitel Philippines</li>
-                        <li class="flex items-center gap-3 text-sm text-[#6D6875]"><i class="fa-solid fa-graduation-cap accent-rose"></i> Leadership Academy Graduate – Sitel Philippines</li>
-                        <li class="flex items-center gap-3 text-sm text-[#6D6875]"><i class="fa-solid fa-star accent-rose"></i> SME Certification (Technical & Billing) – Sutherland</li>
-                    </ul>
+        <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            
+            <div class="order-2 lg:order-1">
+                <img src="laptop.jpg" alt="Executive Workspace" class="laptop-img">
+            </div>
 
-                    <h3 class="text-xs font-black text-[#4A4440] uppercase tracking-widest mb-4">Technical Skills</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-white border border-rose/20 text-[10px] font-bold rounded-full accent-rose">Salesforce</span>
-                        <span class="px-3 py-1 bg-white border border-rose/20 text-[10px] font-bold rounded-full accent-rose">HubSpot</span>
-                        <span class="px-3 py-1 bg-white border border-rose/20 text-[10px] font-bold rounded-full accent-rose">G-Suite</span>
-                        <span class="px-3 py-1 bg-white border border-rose/20 text-[10px] font-bold rounded-full accent-rose">Asana</span>
-                        <span class="px-3 py-1 bg-white border border-rose/20 text-[10px] font-bold rounded-full accent-rose">Trello</span>
-                    </div>
+            <div class="order-1 lg:order-2 glass-panel p-10 rounded-[40px]">
+                <h2 class="text-sm font-black accent-rose uppercase tracking-[0.4em] mb-6">About Sharon</h2>
+                <p class="text-[#6D6875] leading-relaxed text-lg mb-6">
+                    Dynamic and results-driven Professional with over 15 years of experience, including 10+ years in the BPO industry and 5+ years of proven remote work.
+                </p>
+                <p class="text-[#6D6875] leading-relaxed mb-8">
+                    Expert at bridging the gap between CEO vision and operational execution. Proven track record of increasing sales productivity by 80% and driving 50% business growth through CRM optimization.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-white border border-rose/20 text-[10px] font-bold rounded-full accent-rose">Salesforce</span>
+                    <span class="px-3 py-1 bg-white border border-rose/20 text-[10px] font-bold rounded-full accent-rose">HubSpot</span>
+                    <span class="px-3 py-1 bg-white border border-rose/20 text-[10px] font-bold rounded-full accent-rose">G-Suite</span>
+                    <span class="px-3 py-1 bg-white border border-rose/20 text-[10px] font-bold rounded-full accent-rose">Asana</span>
                 </div>
+            </div>
+        </div>
+    </section>
 
-                <div>
-                    <h2 class="text-sm font-black accent-rose uppercase tracking-[0.4em] mb-8">Work History</h2>
-                    <div class="border-l-2 border-rose/20 ml-3 space-y-12">
-                        <div class="timeline-dot">
-                            <h4 class="font-bold text-[#4A4440] text-lg">Appointment Setter / CEO Assistant</h4>
-                            <p class="text-[10px] font-black accent-rose uppercase tracking-widest mb-2">Togetherlight Inc. | 2021 - Present</p>
-                            <p class="text-sm text-[#6D6875]">Optimized CRM systems to increase sales productivity by 80% and managed executive-level scheduling.</p>
-                        </div>
-                        <div class="timeline-dot">
-                            <h4 class="font-bold text-[#4A4440] text-lg">Operations Manager / Change Leader</h4>
-                            <p class="text-[10px] font-black accent-rose uppercase tracking-widest mb-2">Sitel Philippines | 2018 - 2021</p>
-                            <p class="text-sm text-[#6D6875]">Led organizational change and improved large-scale operational processes for cost-efficiency.</p>
-                        </div>
-                        <div class="timeline-dot">
-                            <h4 class="font-bold text-[#4A4440] text-lg">Team Leader / SME (AT&T)</h4>
-                            <p class="text-[10px] font-black accent-rose uppercase tracking-widest mb-2">Sutherland Global | 2010 - 2018</p>
-                            <p class="text-sm text-[#6D6875]">Oversaw Sales, Technical, and Billing operations for complex accounts.</p>
-                        </div>
-                    </div>
+    <section class="py-24 px-6 bg-white/30">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-sm font-black accent-rose uppercase tracking-[0.4em] mb-12 text-center">Work History</h2>
+            <div class="border-l-2 border-rose/20 ml-6 space-y-12">
+                <div class="timeline-dot">
+                    <h4 class="font-bold text-[#4A4440] text-xl">Appointment Setter / CEO Assistant</h4>
+                    <p class="text-[10px] font-black accent-rose uppercase tracking-widest mb-2">Togetherlight Inc. | 2021 - Present</p>
+                    <p class="text-sm text-[#6D6875]">Optimized CRM systems to increase sales productivity by 80% and managed executive-level scheduling.</p>
+                </div>
+                <div class="timeline-dot">
+                    <h4 class="font-bold text-[#4A4440] text-xl">Operations Manager / Change Leader</h4>
+                    <p class="text-[10px] font-black accent-rose uppercase tracking-widest mb-2">Sitel Philippines | 2018 - 2021</p>
+                    <p class="text-sm text-[#6D6875]">Led organizational change and improved large-scale operational processes for cost-efficiency.</p>
+                </div>
+                <div class="timeline-dot">
+                    <h4 class="font-bold text-[#4A4440] text-xl">Team Leader / SME (AT&T)</h4>
+                    <p class="text-[10px] font-black accent-rose uppercase tracking-widest mb-2">Sutherland Global | 2010 - 2018</p>
+                    <p class="text-sm text-[#6D6875]">Oversaw Sales, Technical, and Billing operations for complex accounts.</p>
                 </div>
             </div>
         </div>
